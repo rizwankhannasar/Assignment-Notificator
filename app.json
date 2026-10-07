@@ -1,0 +1,37 @@
+{
+    "name": "MUST Assignment Notification",
+    "description": "Automatically fetches pending assignments and sends email notifications.",
+    "repository": "https://github.com/AbdurRehman1129/must-assignment-notification",
+    "env": {
+      "ROLL_NO": {
+        "description": "Your university roll number (055)",
+        "required": true
+      },
+      "SESSION": {
+        "description": "Your university session (FA23)",
+        "required": true
+      },
+      "PROGRAM": {
+        "description": "Your university program (BSE)",
+        "required": true
+      },
+      "PASSWORD": {
+        "description": "Your CMS password",
+        "required": true
+      },
+      "EMAIL_SENDER": {
+        "description": "Your email (for sending notifications)",
+        "required": true
+      },
+      "EMAIL_PASSWORD": {
+        "description": "Your email app password",
+        "required": true
+      },
+      "EMAIL_TO": {
+        "description": "The recipient email for notifications",
+        "required": true
+      }
+    },
+    "addons": ["scheduler:standard"]
+  }
+  
